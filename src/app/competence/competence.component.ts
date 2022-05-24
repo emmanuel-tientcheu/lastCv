@@ -10,13 +10,31 @@ import {  DbServiceInformation } from '../services/db.service';
 export class CompetenceComponent implements OnInit {
 
   competance:competance[]=[];
+  display:string = 'hidden';
+  top:string = '-550px';
 
   constructor(private dbCompetance:DbServiceInformation) { }
 
   ngOnInit(): void {
     this.dbCompetance.getInformationCompetance().subscribe((res)=>{
-       console.table(res);
+      this.competance = <competance[]>res;
+      console.table(this.competance);
+      console.log(this.competance[0].nom);
     })
   }
 
+  addInformation(){
+    this.display="visible";
+    this.top="10px"
+  }
+  close(){
+  
+    this.top="-550px"
+  }
+
+  deleteCompetance(competance:competance){
+    this.dbCompetance.deleteCompetance(competance)
+    .subscribe(()=>(this.competance = this.competance.filter((c)=>c.id!==competance.id
+    )))
+  }
 }

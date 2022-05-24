@@ -32,5 +32,13 @@ export class DasBordComponent implements OnInit {
   goToAbout(){
     this.router.navigate(['/about']);
   }
+
+  gotoSkill(){
+    this.router.navigate(['/competance']);
+  }
+
+  goToExperiance(){
+    this.router.navigate(['/experiance']);
+  }
  
 }

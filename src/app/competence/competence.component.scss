@@ -1,5 +1,5 @@
 .competance{
-    width: 90%;
+    width: 70%;
     box-shadow: 0 6px 15px 0 rgb(74 99 231 / 20%);
     border-radius: 5px;
     padding: 40px;
@@ -101,4 +101,14 @@ h4 {
 .progress{
     height: 10px;
 }
+.sparing{
+    opacity: 0.8;
+    margin-left:10%;
+    border-radius: 20px;
+   transition:1s;
+}
 
+.btn{
+    width: 10%;
+    padding: 10px;
+}

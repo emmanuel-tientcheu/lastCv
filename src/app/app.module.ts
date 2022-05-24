@@ -13,7 +13,9 @@ import { ProfilComponent } from './profil/profil.component';
 import { AllComponent } from './all/all.component';
 import { ProfileUserComponent } from './profile-user/profile-user.component';
 import { AboutInformationComponent } from './about-information/about-information.component';
-import { CompetenceComponent } from './competence/competence.component'
+import { CompetenceComponent } from './competence/competence.component';
+import { DisplayAddDirective } from './display-add.directive';
+import { ExperienceComponent } from './experience/experience.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { CompetenceComponent } from './competence/competence.component'
     AllComponent,
     ProfileUserComponent,
     AboutInformationComponent,
-    CompetenceComponent
+    CompetenceComponent,
+    DisplayAddDirective,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
