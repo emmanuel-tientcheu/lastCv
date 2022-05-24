@@ -1,0 +1,50 @@
+<div class=" container-fluid mainDashBord mx-3 mt-4 text-center " appBtnChangeColor={{color}}>
+  <div class="image text-center my-3">
+    <div class="row">
+      <div class="col">
+        <img src="../../assets/images/galaxy-g1aeacd1b6_1280.jpg" alt="" class=" rounded-circle my-3 imgProfil" height="90px" width="90px">
+      </div>
+      <div class="col"></div>
+    </div>
+
+    <div class="row userInformation my-3">
+      <div class="col mx-2"><h5>{{nom | uppercase}}</h5></div>
+      <div class="col"></div>
+    </div>
+    
+    <div class="row userInformation my-3">
+      <div class="col"><p>{{prenom}}</p></div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="btns my-5">
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="far fa-user mx-3" [ngStyle]="{'font-size':'20px'}"></i>ABOUT</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-3"  [ngStyle]="{'font-size':'20px'}"></i>LOISIR</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-4"  [ngStyle]="{'font-size':'20px'}"></i>DIPLOME</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-4"  [ngStyle]="{'font-size':'20px'}"></i>COMPETANCE</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-3"  [ngStyle]="{'font-size':'20px'}"></i>FORMATION</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-3"  [ngStyle]="{'font-size':'20px'}"></i>ALL CV</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-3"  [ngStyle]="{'font-size':'20px'}"></i>CONTACT</button>
+      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-3"  [ngStyle]="{'font-size':'20px'}"></i>BLOG</button>
+    </div>
+  </div>
+
+  <div class="allLog my-5">
+   <div class="row">
+
+     <div class="col">
+      <a href="#"   [ngStyle]="{'backgroundColor':'#FF5959'}"><i class="fab fa-linkedin-in"  [ngStyle]="{'font-size':'25px'}"></i></a>
+     </div>
+     <div class="col">
+      <a href="#"   [ngStyle]="{'backgroundColor':'#FF5959'}"><i class="fab fa-stack-overflow"  [ngStyle]="{'font-size':'25px'}"></i></a>
+     </div>
+     <div class="col">
+      <a href="#"  [ngStyle]="{'backgroundColor':'#FF5959'}"><i class="fab fa-github"  [ngStyle]="{'font-size':'25px'}"></i></a>
+     </div>
+
+   </div>
+  </div>
+
+</div>

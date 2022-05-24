@@ -1,0 +1,12 @@
+.headers{
+   width:15vw;
+   height: 6vh;
+   border-radius:15px;
+}
+
+
+@media screen and (max-width:1000px){
+   .headers{
+       height:8vh;
+   }
+}
