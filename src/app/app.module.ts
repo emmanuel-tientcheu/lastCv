@@ -9,7 +9,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { DasBordComponent } from './das-bord/das-bord.component';
 import { BtnChangeColorDirective } from './btn-change-color.directive';
 import { HearderAppComponent } from './hearder-app/hearder-app.component';
-import { ProfilComponent } from './profil/profil.component'
+import { ProfilComponent } from './profil/profil.component';
+import { AllComponent } from './all/all.component';
+import { ProfileUserComponent } from './profile-user/profile-user.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProfilComponent } from './profil/profil.component'
     DasBordComponent,
     BtnChangeColorDirective,
     HearderAppComponent,
-    ProfilComponent
+    ProfilComponent,
+    AllComponent,
+    ProfileUserComponent
   ],
   imports: [
     BrowserModule,
