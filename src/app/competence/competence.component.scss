@@ -19,21 +19,25 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.section-title:after {
-    content: "";
-    background: #ff5959;
-    border-radius: 25px;
-    display: block;
-    height: 5px;
-    margin-top: 14px;
-    width: 30px;
-}
 
 .section-title {
-    margin: 0;
+   margin-bottom: 20px;
     font-size: larger;
+    display: flex;
+    align-items: center;
+
 }
 
+.section-title button{
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin-left: 20px;
+    background-color: #ff5959;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 50%;
+}
 p {
     display: block;
     margin-block-start: 1em;
