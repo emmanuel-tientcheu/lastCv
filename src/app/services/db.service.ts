@@ -14,9 +14,16 @@ export class connectDb{
 export class DbServiceInformation{
   
   private Url = 'http://localhost:5000/information';
+  private UrlCompetance = 'http://localhost:5000/competance';
   constructor(private http:HttpClient) { }
 
   getInformationDb(){
     return this.http.get(this.Url);
   }
+
+  getInformationCompetance(){
+    return this.http.get(this.UrlCompetance);
+  }
 }
+
+

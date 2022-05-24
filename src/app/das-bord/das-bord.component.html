@@ -20,7 +20,7 @@
 
   <div>
     <div class="btns my-5">
-      <button class="btne w-100 " appBtnChangeColor={{color}}><i class="far fa-user mx-3" [ngStyle]="{'font-size':'20px'}"></i>ABOUT</button>
+      <button (click)="goToAbout()" class="btne w-100 " appBtnChangeColor={{color}}><i class="far fa-user mx-3" [ngStyle]="{'font-size':'20px'}"></i>ABOUT</button>
       <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-3"  [ngStyle]="{'font-size':'20px'}"></i>LOISIR</button>
       <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-4"  [ngStyle]="{'font-size':'20px'}"></i>DIPLOME</button>
       <button class="btne w-100 " appBtnChangeColor={{color}}><i class="fas fa-tools mx-4"  [ngStyle]="{'font-size':'20px'}"></i>COMPETANCE</button>
